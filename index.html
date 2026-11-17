@@ -12,8 +12,8 @@
 <script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-app-check-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-database-compat.js"></script>
-  <script type="module" crossorigin src="./assets/index-DFHWLs1t.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Hiz_d44k.css">
+  <script type="module" crossorigin src="./assets/index-D9WnhKjM.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DOmSV8F8.css">
 </head>
 <body>
 
@@ -67,6 +67,10 @@
           <span class="demo-card d3"><i>?</i><b>SPOON</b></span>
         </div>
         <div class="demo-result">Rhyme twins! +3</div>
+      </div>
+      <div id="rejoinCard" class="rejoin-card" hidden>
+        <span><b>Jump back in?</b><small id="rejoinText"></small></span>
+        <button type="button" class="btn-success btn-sm" id="btnRejoin">Rejoin</button>
       </div>
       <p class="menu-pitch">Everyone secretly writes a rhyme. Match exactly one other player to win the round.</p>
 
@@ -195,6 +199,7 @@
       <div class="stage-card submit-stage" id="submitStageCard">
         <span class="stage-eyebrow">RHYME WITH</span>
         <div id="displayTargetWord" class="target-word">---</div>
+        <p id="targetMeaning" class="target-meaning" hidden></p>
         <div class="submit-meta">
           <span class="timer-count" role="timer" aria-label="Seconds remaining"><span id="timerDisplay">15</span>s</span>
           <span id="answerRule" class="rule-chip" role="status" aria-live="polite" hidden></span>
